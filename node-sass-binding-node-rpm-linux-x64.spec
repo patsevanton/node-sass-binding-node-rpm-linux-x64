@@ -1,6 +1,7 @@
 %global _prefix /usr/local
 
 Name:    node-sass-binding-node-rpm-linux-x64
+Version: 57
 Release: 1
 Summary: Node.js bindings to libsass https://npmjs.org/package/node-sass
 Group:   Development Tools
