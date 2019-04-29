@@ -23,3 +23,4 @@ cp wal-g %{buildroot}/opt/lib/node-sass/linux-x64-%{node_version}/linux-x64-%{ve
 
 %files
 /opt/lib/node-sass/linux-x64-%{node_version}/linux-x64-%{version}_binding.node
+
