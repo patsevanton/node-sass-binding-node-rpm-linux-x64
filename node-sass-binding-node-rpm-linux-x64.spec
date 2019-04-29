@@ -19,7 +19,7 @@ curl -L %{url} > linux-x64-%{version}_binding.node
 
 %install
 %{__install} -m 0755 -d %{buildroot}/opt/lib/node-sass/linux-x64-%{node_version}/
-cp wal-g %{buildroot}/opt/lib/node-sass/linux-x64-%{node_version}/linux-x64-%{version}_binding.node
+cp linux-x64-%{version}_binding.node %{buildroot}/opt/lib/node-sass/linux-x64-%{node_version}/
 
 %files
 /opt/lib/node-sass/linux-x64-%{node_version}/linux-x64-%{version}_binding.node
