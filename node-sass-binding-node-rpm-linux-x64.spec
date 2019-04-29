@@ -1,22 +1,24 @@
 %global _prefix /usr/local
+%global node_version 4.11.0
 
 Name:    node-sass-binding-node-rpm-linux-x64
-Version: 4.11_57
+Version: 57
 Release: 1
 Summary: Node.js bindings to libsass https://npmjs.org/package/node-sass
 Group:   Development Tools
 License: ASL 2.0
+URL: https://github.com/sass/node-sass/releases/download/v%{node_version}/linux-x64-%{version}_binding.node
 
 %description
-Node-sass is a library that provides binding for Node.js to LibSass, the C version of the popular stylesheet preprocessor, Sass.
+Node-sass is a library that provides binding for Node.js to LibSass,
+the C version of the popular stylesheet preprocessor, Sass.
+
+%prep
+curl -L %{url} > linux-x64-%{version}_binding.node
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p %{buildroot}/opt/lib/node-sass/linux-x64-%{version}/
-curl -sL https://github.com/sass/node-sass/releases/download/v4.11.0/linux-x64-57_binding.node -o %{buildroot}/opt/lib/node-sass/linux-x64-%{version}/node-sass-binding-%{version}.node
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+%{__install} -m 0755 -d %{buildroot}/opt/lib/node-sass/linux-x64-%{node_version}/
+cp wal-g %{buildroot}/opt/lib/node-sass/linux-x64-%{node_version}/linux-x64-%{version}_binding.node
 
 %files
-/opt/lib/node-sass/linux-x64-%{version}/node-sass-binding-%{version}.node
+/opt/lib/node-sass/linux-x64-%{node_version}/linux-x64-%{version}_binding.node
