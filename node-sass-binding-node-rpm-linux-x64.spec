@@ -2,7 +2,7 @@
 %global node_version 4.11.0
 
 Name:    node-sass-binding-node-rpm-linux-x64
-Version: 57
+Version: 64
 Release: 1
 Summary: Node.js bindings to libsass https://npmjs.org/package/node-sass
 Group:   Development Tools
