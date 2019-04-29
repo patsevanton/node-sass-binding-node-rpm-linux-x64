@@ -8,6 +8,7 @@ Summary: Node.js bindings to libsass https://npmjs.org/package/node-sass
 Group:   Development Tools
 License: ASL 2.0
 URL: https://github.com/sass/node-sass/releases/download/v%{node_version}/linux-x64-%{version}_binding.node
+Source0: README.md
 
 %description
 Node-sass is a library that provides binding for Node.js to LibSass,
