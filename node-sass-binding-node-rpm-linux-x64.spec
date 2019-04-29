@@ -3,7 +3,7 @@
 
 Name:    node-sass-binding-node-rpm-linux-x64
 Version: 64
-Release: 1
+Release: 2
 Summary: Node.js bindings to libsass https://npmjs.org/package/node-sass
 Group:   Development Tools
 License: ASL 2.0
